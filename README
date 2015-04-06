@@ -1,0 +1,6 @@
+Use the following line in your bashrc to get a wise cow:
+
+shuf -n 1 $THISDIR/wisdom.txt | cowsay
+
+Obviously, you should change $THISDIR to the location of this directory. I 
+used ~/.programming, for example!
