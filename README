@@ -2,7 +2,7 @@ Use the following to "install" this package into your bashrc:
 
 cd $HOME
 INSTALL_DIR=$HOME/.programming-wisdom
-git clone github.com/jhaberstroh/programming-wisdom $INSTALL_DIR
+git clone https://github.com/jhaberstroh/programming-wisdom $INSTALL_DIR
 echo "shuf -n 1 $INSTALL_DIR/wisdom.txt | cowsay" >> ~/.bashrc
 
 You can change INSTALL_DIR to any absolute directory you would like to install into.
