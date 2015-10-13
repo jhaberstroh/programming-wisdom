@@ -1,6 +1,10 @@
-Use the following line in your bashrc to get a wise cow:
+Use the following to "install" this package into your bashrc:
 
-shuf -n 1 $THISDIR/wisdom.txt | cowsay
+cd $HOME
+INSTALL_DIR=$HOME/.programming-wisdom
+git clone github.com/jhaberstroh/programming-wisdom $INSTALL_DIR
+echo "shuf -n 1 $INSTALL_DIR/wisdom.txt | cowsay" >> ~/.bashrc
 
-Obviously, you should change $THISDIR to the location of this directory. I 
-used ~/.programming, for example!
+You can change INSTALL_DIR to any absolute directory you would like to install into.
+
+Happy coding!!
