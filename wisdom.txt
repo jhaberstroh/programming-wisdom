@@ -6,7 +6,7 @@ Safety: Never require source modification to get behaviour that you need.
 Safety: Always use deterministic seeds to allow repeatability of ALL things.
 Safety (BASH): Use set -o nounset and set -o exiterr for safer and more reliable scripts.
 Workflow: Programs should have one purpose, and use scripts to hold it all together.
-Workflow: Always Be Compiling, Always Be Checking.
+Workflow: Coding is as easy as ABC: Always Be Compiling, Always Be Checking.
 Workflow: Code should be first correct, then fast.
 Debugging: There will always be bugs.
 Debugging: When dealing with bugs, aim for "better and not arbitrary".
