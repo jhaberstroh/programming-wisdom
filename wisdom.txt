@@ -3,19 +3,23 @@ Safety: When in doubt, test.
 Safety: Have only one origin for each piece of data so that propagate changes everywhere.
 Safety: Use assertions and raise exceptions so your program fails sooner and more specifically
 Safety: Never require source modification to get behaviour that you need.
-Safety: Always use deterministic seeds to allow repeatability of ALL things.
-Safety (BASH): Use set -o nounset and set -o exiterr for safer and more reliable scripts.
+Safety: Always have a script use the same seeds to allow for absolute repeatability.
+Safety (BASH): Use set -o nounset and set -o errexit for safer and more reliable scripts.
 Workflow: Programs should have one purpose, and use scripts to hold it all together.
-Workflow: Coding is as easy as ABC: Always Be Compiling, Always Be Checking.
+Workflow: Coding is as easy as ABC; Always Be Compiling, Always Be Checking.
 Workflow: Code should be first correct, then fast.
+Workflow: Optimize only for the system/platform that you will be doing production on.
+Workflow: Consider your true weakness; will you be limited by CPU, memory, or I/O?
 Debugging: There will always be bugs.
-Debugging: When dealing with bugs, aim for "better and not arbitrary".
-Debugging: Better, but arbitrary, does NOT cut it! A bug is not fixed until it is fixed!
+Debugging: When dealing with bugs, aim for "better-and-not-arbitrary".
+Debugging: Better-but-arbitrary doesn't cut it! (A bug is NOT fixed until it is FIXED!)
+Debugging (python): Consider the "logging" standard module for debug/runtime notifications.
 Analysis: Separate data production from data analysis -- one should not cause the other to fail.
+Analysis: Separate data analysis from data visualization -- you shouldn't need to rerun your analysis just to make graphs prettier.
 Analysis: Use stderr for runtime notices to keep stdout clean for data.
 Analysis: Pre-process your data in BASH so that your program has the easiest job possible.
-Analysis: Make your life easy -- try numpy.loadtxt or other simple and fast data loading methods.
-Analysis: Keep the context that your data was generated with the data for portability and flexibility.
+Analysis: Use numpy.loadtxt or well tested and fast data loading modules.
+Analysis: Store lots of context about data generation alongside that data for portability and flexibility.
 Style: Pick your conventions in a program and stick with them, even if you don't like them.
 Style: Design for specificity and simplicity, and refactor when you need to begin repeating code.
 Style: Make no excess objects.
